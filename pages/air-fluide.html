@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VIEWPORT POUR IPHONE -->
+
+    <!-- EXTERNAL LINKS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans:300,400" rel="stylesheet"><!-- GOOGLE FONT BUBBLER ONE + OPEN SANS // 300 + 700 + Quicksand-->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132821264-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132821264-1');
+    </script>
+
+
+    <!-- INTERNAL LINKS -->
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/navHome.css">
+    <link rel="stylesheet" href="../css/specific.css">
+
+    <title>L'Air un Fluide | LaPortance.co.uk</title>
+    <link rel="icon" href="../library/ico.png">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">LaPortance.co.uk</a>
+
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link green" href="profileAile.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active-b" href="#">Théorie</a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link yellow" href="laerodynamisme.html">L'aérodynamisme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="forces.html">Les Forces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active-b" href="#">L'air, un fluide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="importance-aile.html">L'aile</a>
+            </li>
+        </ul>
+      </div>
+
+      <span style="cursor:pointer" class="d-flex d-lg-none" onclick="toggleNav()"><img src="../library/menu.svg" alt=""></span>
+    </nav>
+
+    <div id="myNav" class="overlay d-flex d-lg-none" onclick="closeNav()">
+      <div class="overlay-content">
+        <a href="laerodynamisme.html" onclick="closeNav()">L'aerodynamisme</a>
+        <a href="forces.html" onclick="closeNav()">Les Forces</a>
+        <a href="#" onclick="closeNav()">L'air, un fluide</a>
+        <a href="importance-aile.html" onclick="closeNav()">L'aile</a>
+      </div>
+    </div>
+
+    <!-- JUMBOTRON PAGES -->
+    <div class="jumbotron jumbotron-fluid jumbotron-pages">
+      <div class="container">
+        <h1 class="display-3 jumbotron-Title">L'air est un fluide</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <!-- Écoulement de l'air -->
+      <h3 class="content-h3-subtitle">Écoulement de l'air</h3>
+      <p class="content-p">On appelle Écoulement le déplacement de l'air par rapport à un objet. On distingue trois grands types d'écoulement.</p>
+
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="d-flex mr-3 content-img-xs" src="../content/ecoulements/laminaire.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <p class="content-p"><span class="content-p-definition">Ecoulement laminaire: </span>Les particules d'air glissent parfaitement les unes sur les autres sans échanges de particules entre elles. Elles suivent un mouvement rectiligne et parallèle.</p>
+          </div>
+        </li>
+        <li class="media my-4">
+          <img class="d-flex mr-3 content-img-xs" src="../content/ecoulements/turbulent.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <p class="content-p"><span class="content-p-definition">Écoulement turbulent: </span>Les particules d'air ont des trajectoires quasiment parallèles entre elles, mais qui ne sont plus rectilignes, tout en se déplaçant globalement dans le même sens et à la même vitesse</p>
+
+          </div>
+        </li>
+        <li class="media">
+          <img class="d-flex mr-3 content-img-xs" src="../content/ecoulements/tourbillonaire.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <p class="content-p"><span class="content-p-definition">Ecoulement tourbillonnaire: </span>L'écoulement est très désordonné, les particules se mélangent et ne suivent ni une trajectoire rectiligne ni parallèle. Certaines particules peuvent remonter le courant et former ainsi des tourbillons.</p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- resistance de l'air -->
+      <h3 class="content-h3-subtitle">Résistance de l'air</h3>
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="d-flex mr-3 content-img-xs" src="../content/ecoulements/disque.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <p class="content-p">Écoulement de l'air sur un disque plat de faible épaisseur disposé parallèlement aux filets d'air est la forme présentant une résistance minimale simplement due aux frottements de l'air sur la paroi de la plaque. </br><strong>Résistance quasi nulle</strong></p>
+          </div>
+        </li>
+        <li class="media padding-top">
+          <img class="d-flex mr-3 content-img-xs" src="../content/ecoulements/disquePerpendiculaire.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <p class="content-p">En disposant un disque plat perpendiculairement au flux d'air, nous constatons que l'écoulement de l'air peine à contourner l'obstacle et qu'il se forme une surpression à l'avant et une dépression à l'arrière avec un effet tourbillonnaire. La résistance est alors maximale. </br><strong>Résistance 100%</strong></p>
+          </div>
+        </li>
+        <li class="media padding-top">
+          <img class="d-flex mr-3 content-img-xs" src="../content/ecoulements/demiSphere.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <p class="content-p">En ajoutant une demi-sphère à l'avant du disque nous constatons que l'air contourne mieux l'objet, la surpression diminue mais il subsiste toujours une dépression et une zone tourbillonnaire à l'arrière. </br><strong>Résistance 75%</strong></p>
+          </div>
+        </li>
+        <li class="media padding-top">
+          <img class="d-flex mr-3 content-img-xs" src="../content/ecoulements/sphere.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <p class="content-p">Si l’on complète cette demi-sphère pour former une sphère, l'écoulement est amélioré, la zone tourbillonnaire arrière est alors atténuée, mais pas complètement résorbée.</br><strong>Résistance 50%</strong></p>
+          </div>
+        </li>
+        <li class="media padding-top">
+          <img class="d-flex mr-3 content-img-xs" src="../content/ecoulements/fusele.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <p class="content-p">Un corps fuselé "pointu" à l'arrière (bord de fuite), crée une circulation ( <a href="#">Voir Théorie de la circulation ou de Kutta Jukowski</a> ). </br><strong>Résistance 5%</strong></p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Expression de la résistance de l'air -->
+      <h4 class="content-formula-title padding-top">Expression de la résistance de l'air</h4>
+      <p class="content-p">La résistance de l'air est proportionnelle à la surface présentée perpendiculairement à l'écoulement, au carré de la vitesse de l'écoulement de l’air, à la masse volumique de l'air et à la forme du corps. Nous pouvons donc écrire que :</p>
+
+      <ul class="content-ul-formula">
+        <li><img src="../content/formulas/resistanceAir.png" class="content-formula-img content-formula-img-md" alt=""></li>
+        <li><p class="content-p"><span class="content-formula-letter">R </span> résistance de l'air exprimée en Newton</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">K </span> coefficient qui tient compte de la forme du corps et de son état de surface</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">ρ </span> masse volumique de l'air exprimée en kg.m<sup>-3</sup></p></li>
+        <li><p class="content-p"><span class="content-formula-letter">v </span> vitesse exprimée en m.s<sup>-1</sup></p></li>
+        <li><p class="content-p"><span class="content-formula-letter">S </span> exprimée en m<sup>2</sup> surface présentée perpendiculairement à l'écoulement</p></li>
+      </ul>
+
+
+      <!-- Théorème de Bernoulli : -->
+      <h3 class="content-h3-subtitle" id="bernoulli">Théorème de Bernoulli :</h3>
+      <p class="content-p"><span class="content-p-definition">Daniel Bernoulli (1700-1782) </span>est un physicien, mathématicien et médecin suisse du XVIIIe siècle. C’est en 1738 qu’il publie son ouvrage Hydrodynamica dans lequel il expose le théorème fondamental de la mécanique des fluides qui porte son nom : le théorème de Bernoulli.</p>
+      <p class="content-p"><span class="content-p-definition">Le théorème de Bernoulli </span>met en évidence le principe de conservation de l'énergie, et plus particulièrement il expose les premiers éléments de la théorie cinétique des gaz. En effet, en partant du principe que tout fluide exerce une pression sur un corps, Bernoulli démontre que la pression d’un fluide diminue lorsque sa vitesse augmente.</p>
+
+
+      <!-- l'effet venturi -->
+      <p class="content-p">L’effet Venturi illustre parfaitement ce théorème :</p>
+      <img class="content-img-center content-img-md" src="../content/pages/bernoulli.png" alt="">
+
+      <p class="content-p padding-top"><u>On considère ici :</u> l'écoulement d’un fluide compressible dans un tube avec un rétrécissement de celui-ci au point B. On précise que le débit est le même aux sections distinctes Sa, Sb et Sc du tube. Ainsi, les facteurs au cours de l'écoulement de l’air sont la vitesse et la pression.</p>
+      <p class="content-p"><u>On observe en effet que la vitesse varie :</u> elle s’accroît lors du rétrécissement du tube au niveau de la section Sb et diminue lors de son élargissement en section Sc. On observe de la même manière que la pression varie de manière opposée à la vitesse : elle diminue au niveau de la section Sb et s'accroît en section Sc. Un fluide passant par un tel tube voit donc sa vitesse augmenter en même temps que sa pression diminue lors du rétrécissement au passage du col.</p>
+
+      <!-- effet venturi gif -->
+      <img class="content-img-center content-img-sm" src="../content/pages/effetVenturi.gif" alt="">
+
+      <!-- On a la relation suivante : -->
+      <h4 class="content-formula-title padding-top">On a la relation suivante :</h4>
+      <ul class="content-ul-formula">
+        <li><img src="../content/formulas/relation.png" class="content-formula-img content-formula-img-md" alt=""></li>
+        <li><p class="content-p"><span class="content-formula-letter">P </span> La pression</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">ρ </span> La masse volumique</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">v </span> La vitesse</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">G </span> L'accélération de la pesanteur (en N/kg ou m/s<sup>2</sup>)</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">Z </span> La hauteur (en m)</p></li>
+      </ul>
+
+      <p class="content-p">Or, za = zb car z est constant au cours de l'écoulement, le produit <strong>pgz</strong> étant une constante on peut simplifier la relation :</p>
+      <img class="content-formula-img content-formula-img-md" src="../content/formulas/relation2.png" alt="">
+      <p class="content-p padding-top">Ainsi, lorsque la pression augmente, la vitesse diminue car l'équation ci-dessus est égale à une constante.</p>
+
+      <!-- Un phénomène permettant le vol: -->
+      <h4 class="content-formula-title padding-top">Un phénomène permettant le vol:</h4>
+      <p class="content-p">Ce principe explique le vol des avions car l’aile de l’avion dévie le flux d’air en deux flux distincts, l’un s'écoulant par l’extrados et l’autre par l’intrados. Le profil de l’aile, bombé sur l’extrados, contraint le flux d’air de l’extrados à une compression comme c’est le cas au passage du rétrécissement d’un tube. Ainsi, la vitesse du flux d’air de l’extrados est plus importante que celle de l’intrados. Par conséquent, selon le principe de Bernoulli, la pression sur l’extrados diminue et devient plus faible que la pression exercée sur l’intrados. Cette différence de pression résulte en une force de sustentation permettant à l’avion de s'élever : la portance.</p>
+      <img class="content-img-center content-img-md" src="../content/pages/intradosExtrados.jpg" alt="">
+
+
+      <!-- Fluide parfait et viscosité :-->
+      <h3 class="content-h3-subtitle">Fluide parfait et viscosité :</h3>
+
+      <!-- Définition d'un fluide -->
+      <h4 class="content-formula-title padding-top">Définition d'un fluide</h4>
+      <p class="content-p">L'eau liquide est un fluide, une substance déformable sous l'action d'une force externe qui lui est appliquée. Sa forme est conservée seulement si un corps solide les limite. Les liquides sont généralement considérés comme non compressibles (c'est le cas de l'eau), ils conservent le même volume quelle que soit leur forme. Par opposition, les gaz, comme l’air, tendent à occuper tout l'espace disponible, ils n'ont donc pas de surface propre et sont compressibles</p>
+      <p class="content-p">Un fluide non visqueux est dit parfait. En réalité, aucun fluide n’est totalement parfait. Tout fluide possède une certaine viscosité. Le fluide parfait est en fait un modèle, qui permet une représentation simplifiée mais inexacte d’une problématique physique.</p>
+
+      <!-- La viscosité-->
+      <h4 class="content-formula-title padding-top" id="viscosite">La viscosité</h4>
+      <p class="content-p">La viscosité peut être définie synthétiquement comme la résistance d'un fluide au changement de forme. On constate par exemple que le miel est une substance plus visqueuse que l’eau. Cela est mis en évidence lorsque l’on observe l'écoulement de ces deux liquides : l’eau a bien moins de difficulté à s'écouler que le miel. C’est dû à la viscosité, qui est la tendance d’un fluide à résister à son écoulement. Les liquides ont une viscosité supérieure à celle des gaz car leur espace intermoléculaire est plus faible, leurs molécules sont donc plus rapprochées et des liaisons s'établissent entre elles, ce qui augmente la cohésion de l'ensemble. Par ailleurs, un fluide est dit newtonien s’il conserve la même viscosité quelle que soit la valeur de la contrainte appliquée, ainsi l’air est un fluide non newtonien car celui-ci est compressible.</p>
+
+      <!-- effet coanda -->
+      <div class="media">
+        <img class="d-flex mr-3 content-img-md" src="../content/pages/effetCoanda.gif" alt="Generic placeholder image">
+        <div class="media-body">
+          <p class="content-p"><span class="content-p-definition">Un phénomène, l’effet Coanda, illustre la viscosité d’un fluide : </span>Ici, on observe bien que l’eau voit sa trajectoire verticale descendante être modifiée au contact de la cuillère. En effet, cela est dû en partie à la viscosité du fluide, celui-ci subit une déviation et suit la surface de la cuillère avant de s’en détacher.</p>
+        </div>
+      </div>
+
+      <!-- coanda -->
+      <img class="content-img-center content-img-md padding-top" src="../content/pages/coanda2.jpg" alt="">
+      <p class="content-p-comment text-center">Ci dessus, la flèche rouge représente le parcours théorique de l'air sans effet Coanda. L'écoulement de l’air sur l’extrados n'épousera alors pas le profil de l’aile comme c’est le cas en réalité.</p>
+
+
+      <!-- Théorème de Kutta-Jukowski : -->
+      <h3 class="content-h3-subtitle">Théorème de Kutta-Jukowski :</h3>
+      <p class="content-p"><span class="content-p-definition">Wilhelm Kutta (1867-1944) et Nikolaï Jukowski (1847-1921): </span>C’est au début du XXe siècle que la Théorie de Kutta-Jukowski aussi appelée théorie de la circulation apparaît. Cette théorie est le fruit du travail de deux aérodynamiciens, Martin Wilhelm Kutta, allemand, et Nikolaï Joukovski, Russe, qui indépendamment aboutissent aux mêmes conclusions.</p>
+      <p class="content-p"><span class="content-p-definition">Paradoxe d’Alembert: </span>Considérons un écoulement à vitesse constante de fluide parfait (voir viscosité) autour d’un cylindre. L’écoulement d’air est alors le suivant :</p>
+      <img class="content-img-center content-img-md" src="../content/pages/fluideParfait.jpg" alt="">
+      <p class="content-p"><u>On constate :</u> Une certaine symétrie de l’écoulement autour du cylindre, notamment par rapport à la direction de la vitesse. Cette symétrie nous permet de constater que la pression au point A est la même que celle au point B. Les forces de pression des deux côtés du cylindre sont donc identiques, ce qui signifierait qu’il n’y a ni portance ni traînée. Ce résultat diverge, évidemment, de la réalité, on parle de paradoxe d’Alembert. On précise que ce raisonnement est basé sur l’exemple du cylindre car il possède une géométrie simple, mais ce phénomène est valable pour tout objet, profil d’aile inclus.</p>
+
+      <!-- Théorie de la circulation : -->
+      <h4 class="content-formula-title padding-top">Théorie de la circulation :</h4>
+      <p class="content-p">Dans les écoulements réels, des perturbations apparaissent à l’arrière du solide (sillage). L’origine de ces perturbations est la viscosité des fluides réels. Sans viscosité, pas de traînée. C’est grâce aux travaux de W. Kutta et N. Jukowski que le mystère s’est éclairci : il existerait un phénomène autour du profil nommé circulation. La circulation apporterait l’élément manquant pour comprendre comment se développe la portance.</p>
+      <p class="content-p">La viscosité du fluide permet son adhérence à l’aile de l’avion, même à vitesse faible et au bord de fuite de l’aile. En réalité, le flux d’air s'écoulant par l’intrados a une pression plus importante que celle sur l’extrados. Par conséquent, le flux d’air de l’intrados aura une tendance à contourner le bord de fuite pour se précipiter sur l’extrados où la pression est plus faible. Au décollage de l’avion, l'air commence donc à contourner le bord de fuite en raison de la faiblesse des forces d'inertie par rapport aux forces de viscosité. Ce rapport de forces s'appelle le nombre de Reynolds (en savoir plus sur le nombre de Reynolds) et il est très faible au démarrage du mouvement.</p>
+
+      <img class="content-img-center content-img-md" src="../content/bordsDeFuite/bordDeFuiteBasseVitesse.jpg" alt="">
+      <p class="content-p-source text-center">Livre CA Marchaj Aero-Hydro of sailing</p>
+      <p class="content-p-comment text-center">On constate ci dessus, le contournement du bord de fuite par le flux d’air provenant de l’intrados.</p>
+
+      <p class="content-p">Cependant avec l’augmentation de la vitesse de l’avion, l’inertie prend peu à peu le pas sur ce phénomène de contournement qui devient difficile puis impossible, il se forme alors un tourbillon “initiateur”. Par ailleurs, il existe un second tourbillon centré sur le plan qui se crée en raison de la déflexion de l’air par l’aile. En effet, le flux d’air parcourant l’extrados entraîne l’air avoisinant dans son contournement du profil de l’aile.</p>
+
+      <img class="content-img-center content-img-md" src="../content/bordsDeFuite/bordDeFuiteMoyenneVitesse.jpg" alt="">
+      <p class="content-p-source text-center">Livre CA Marchaj Aero-Hydro of sailing</p>
+      <p class="content-p-comment text-center">Ci dessus, on peut observer les deux tourbillons tournant en sens inverse.</p>
+
+      <p class="content-p">Le tourbillon “initiateur” et le tourbillon centré sur le plan tournent dans des sens contraires ce qui permet un équilibre du système. Une fois que l’avion atteint une certaine vitesse, l’équilibrage du système s'opère et le tourbillon “initiateur” se détache du profil ce qui permet la création d’une force de sustentation : la portance.</p>
+
+      <img class="content-img-center content-img-md" src="../content/bordsDeFuite/tourbillonInitiateur.jpg" alt="">
+      <p class="content-p-source text-center">Livre CA Marchaj Aero-Hydro of sailing</p>
+      <p class="content-p-comment text-center">Sur ces images, on assiste au détachement du profil de l’aile du tourbillon initiateur.</p>
+
+      <p class="content-p"><span class="content-p-definition">RÉSUMÉ : </span>Une fois qu'un avion atteint une certaine vitesse, les forces tourbillonnaires s'équilibrent. L'équilibrage du système permet alors la stabilisation du flux d'air, il y a alors création d'une portance.</p>
+
+
+
+    </div><!-- end of the container -->
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/biblio.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

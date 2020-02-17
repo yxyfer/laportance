@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VIEWPORT POUR IPHONE -->
+
+    <!-- EXTERNAL LINKS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans:300,400|Quicksand" rel="stylesheet"><!-- GOOGLE FONT BUBBLER ONE + OPEN SANS // 300 + 700 + Quicksand-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132821264-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132821264-1');
+    </script>
+
+    <!-- INTERNAL LINKS -->
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/navHome.css">
+
+    <title>L'Aérodynamisme | LaPortance.co.uk</title>
+    <link rel="icon" href="../library/ico.png">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">LaPortance.co.uk</a>
+
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link green" href="profileAile.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active-b" href="#">Théorie</a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link active-b" href="#">L'aérodynamisme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="forces.html">Les Forces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="air-fluide.html">L'air, un fluide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="importance-aile.html">L'aile</a>
+            </li>
+        </ul>
+      </div>
+
+      <span style="cursor:pointer" class="d-flex d-lg-none" onclick="toggleNav()"><img src="../library/menu.svg" alt=""></span>
+    </nav>
+
+    <div id="myNav" class="overlay d-flex d-lg-none" onclick="closeNav()">
+      <div class="overlay-content">
+        <a href="#" onclick="closeNav()">L'aerodynamisme</a>
+        <a href="forces.html" onclick="closeNav()">Les Forces</a>
+        <a href="air-fluide.html" onclick="closeNav()">L'air, un fluide</a>
+        <a href="importance-aile.html" onclick="closeNav()">L'aile</a>
+      </div>
+    </div>
+
+    <!-- JUMBOTRON PAGES -->
+    <div class="jumbotron jumbotron-fluid jumbotron-pages">
+      <div class="container">
+        <h1 class="display-3 jumbotron-Title">Qu'est-ce que l'aérodynamisme?</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <!-- START CONTAINER -->
+    <div class="container">
+
+      <p class="content-p">Le rêve de voler, aussi vieux que l’humanité, a poussé une multitude de chercheurs et savants dans une quête effrénée de découvertes et d’explications de ce phénomène. C’est sous l’impulsion et l’émergence des sciences et des mathématiques dans la Grèce Antique que les premières théories tentant d’expliquer le vol apparaissent. Depuis le temps des Grecs, l’imitation des oiseaux fut la base des essais de vol qui perdura pendant des siècles. Ce n’est qu’à partir de la Renaissance que la théorie aérodynamique s’installe et c’est Galilée qui réalisa les première expériences concrètes sur ce thème en cherchant à expliquer la nature de la résistance de l'air. A cette même période Leonardo de Vinci découvrit que les oiseaux planaient à travers des couches d’air assez étanches pour les porter. Il mit notamment en évidence la différence de pression autour du profil d’une aile, entrainant la poussée nécessaire au vol. Mais c’est indéniablement les travaux au XVIIIème siècle de l'ingénieur anglais, Sir George Cayley, qui ont permis une avancée phénoménale dans la compréhension de l’aérodynamisme. Celui-ci a identifié et défini les quatre forces aérodynamiques : le poids, la portance, la traînée et la poussée.</p>
+
+      <p class="content-p">Aujourd’hui, après des siècles de recherches, l’explication de l’aérodynamisme est complexe et se prête difficilement à la simplification. Elle fait appel à un ensemble de lois établies au cours de l’histoire grâce à la mise en commun des travaux acharnés de scientifiques comme Newton, Bernoulli, Navier-Stokes, Euler, Kutta-Jukowski, Sir George Cayley et beaucoup d’autres…</p>
+
+    </div><!-- end of the container -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="../js/biblio.js"></script>
+      <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

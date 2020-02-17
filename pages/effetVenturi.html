@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VIEWPORT POUR IPHONE -->
+
+    <!-- EXTERNAL LINKS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans:300,400" rel="stylesheet"><!-- GOOGLE FONT BUBBLER ONE + OPEN SANS // 300 + 700 + Quicksand-->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132821264-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132821264-1');
+    </script>
+
+    <!-- INTERNAL LINKS -->
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/navHome.css">
+    <link rel="stylesheet" href="../css/specific.css">
+
+    <title>Application de l'effet Venturi | LaPortance.co.uk</title>
+    <link rel="icon" href="../library/ico.png">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">LaPortance.co.uk</a>
+
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link blue" href="laerodynamisme.html">Théorie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active-g" href="#">Expériences</a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link yellow" href="profileAile.html">Profile de l'aile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active-g" href="#">Effet Venturi</a>
+            </li>
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+            </li>
+        </ul>
+      </div>
+
+      <span style="cursor:pointer" class="d-flex d-lg-none" onclick="toggleNav()"><img src="../library/menu.svg" alt=""></span>
+    </nav>
+
+    <div id="myNav" class="overlay d-flex d-lg-none" onclick="closeNav()">
+      <div class="overlay-content">
+        <a href="profileAile.html" onclick="closeNav()">Profile de L'aile</a>
+        <a href="#" onclick="closeNav()">effet venturi</a>
+        <a href="interview.html" onclick="closeNav()">interview</a>
+        <a href="#" onclick="closeNav()">plus</a>
+      </div>
+    </div>
+
+    <!-- JUMBOTRON PAGES -->
+    <div class="jumbotron jumbotron-fluid jumbotron-pages">
+      <div class="container">
+        <h1 class="display-3 jumbotron-Title">Application de l'effet Venturi</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AnoCh8zYFhM" allowfullscreen></iframe>
+      </div>
+
+      <!-- INTRODUCTION DE LEXPERIENCE -->
+      <h4 class="content-h4-experiences">Quelle est cette expérience ?</h4>
+      <p class="content-p">Cette expérience ci illustre l’effet venturi vu dans la seconde partie. On remarque que lorsque l’on souffle dans la paille, les deux cannettes et celle-ci se rapproche.</p>
+
+      <!-- LEXPERIENCE -->
+      <h4 class="content-h4-experiences">Mais pourquoi ce phénomène ?</h4>
+      <p class="content-p">Souffler dans la paille induit une accélération des molécules d’air entre les deux cannettes, ce qui permet une forte diminution de la pression entre les deux cannettes. Or si la pression entre les cannettes est plus faible que sur les autres côtés, alors les deux cannettes vont se rapprocher, ce que l’on observe ici.</p>
+
+      <!-- RESULTATS DE LEXPERIENCE -->
+      <h4 class="content-h4-experiences">Mais quel rapport avec l’aile ?</h4>
+      <p class="content-p">Ce phénomène explique tout simplement le fait que l’aile s’élève. En effet comme vu dans la partie deux, grâce à la courbure sur l’extrados de l’aile, on observe une zone de basse pression par rapport à l’intrados de l’aile. Et cette expérience prouve que un objet à tendance à être attiré par des zones de basse pression, et c’est la raison de l’élévation de l’aile.</p>
+
+
+
+    </div><!-- end of the container -->
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/biblio.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

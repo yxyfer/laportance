@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VIEWPORT POUR IPHONE -->
+
+    <!-- EXTERNAL LINKS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans:300,400" rel="stylesheet"><!-- GOOGLE FONT BUBBLER ONE + OPEN SANS // 300 + 700 + Quicksand-->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132821264-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132821264-1');
+    </script>
+
+    <!-- INTERNAL LINKS -->
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/navHome.css">
+    <link rel="stylesheet" href="../css/specific.css">
+
+    <title>L'Aile | LaPortance.co.uk</title>
+    <link rel="icon" href="../library/ico.png">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">LaPortance.co.uk</a>
+
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link green" href="profileAile.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active-b" href="#">Théorie</a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link yellow" href="laerodynamisme.html">L'aérodynamisme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="forces.html">Les Forces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="air-fluide.html">L'air, un fluide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active-b" href="#">L'aile</a>
+            </li>
+        </ul>
+      </div>
+
+      <span style="cursor:pointer" class="d-flex d-lg-none" onclick="toggleNav()"><img src="../library/menu.svg" alt=""></span>
+    </nav>
+
+    <div id="myNav" class="overlay d-flex d-lg-none" onclick="closeNav()">
+      <div class="overlay-content">
+        <a href="laerodynamisme.html" onclick="closeNav()">L'aerodynamisme</a>
+        <a href="forces.html" onclick="closeNav()">Les Forces</a>
+        <a href="air-fluide.html" onclick="closeNav()">L'air, un fluide</a>
+        <a href="#" onclick="closeNav()">L'aile</a>
+      </div>
+    </div>
+
+    <!-- JUMBOTRON PAGES -->
+    <div class="jumbotron jumbotron-fluid jumbotron-pages">
+      <div class="container">
+        <h1 class="display-3 jumbotron-Title">Quelle est l'importance de l'aile?</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <h3 class="content-h3-subtitle">Les différentes parties de l'aile:</h3>
+      <p class="content-p"><span class="content-p-definition">Définition : </span> Le profil est la section de l’aile par un plan parallèle de l’avion. Le profil d’un avion varie donc d’un avion à un autre.</p>
+
+      <h4 class="content-formula-title padding-top">Présentation de l’aile :</h4>
+      <img class="content-img-center content-img-md" src="../content/forme-aile/coupeProfileAile.jpg" alt="">
+
+      <h4 class="content-formula-title padding-top">On distingue ci dessus les différentes parties de l’aile :</h4>
+      <ul class="content-ul-list">
+        <li><p class="content-p">- <span class="content-list-definition">L'Extrados ,</span> est la partie supérieure de l’aile.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">L'Intrados,</span> est la partie inférieure de l’aile.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La Corde du profil,</span> est le segment qui joint le bord d’attaque et le bord de fuite est appelé corde du profil.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">L'Épaisseur,</span> est la la distance entre l’intrados et l’extrados. La valeur maximale de l’épaisseur divisée par la longueur de la corde donne l’épaisseur relative définie par :E(relative)=e(max)/Lcorde</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La Corde moyenne,</span> est la ligne qui joint le bord d’attaque au bord de fuite en passant à égale distance de l’intrados et de l’extrados. aussi appelé angle d’attaque noté α. L’augmentation de l’angle d’incidence augmentera le coefficient de portance jusqu'à un certain seuil appelé Czmax.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La Flèche du profil,</span>  est la distance maximale entre la corde et la corde moyenne.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La Courbure/cambrure relative,</span>  Le rapport entre la flèche et la longueur de la corde.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">Le centre de portance,</span> (point d’application de la portance) se situe entre 30 et 50 % de la corde depuis le bord d’attaque. Il avance quand l’angle d’incidence augmente jusqu’à l’angle d’incidence de décrochage puis recule. Le foyer (point d’application des variations de portance) se situe entre 20 et 30% de la corde depuis le bord d’attaque. Sa position varie peu.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">L'Angle d’incidence,</span> angle formé par l’inclinaison de l’aile et l’écoulement de l’air, qu’on appelle aussi vent relatif.</p></li>
+      </ul>
+
+      <h3 class="content-h3-subtitle">Les profils d'une aile :</h3>
+      <p class="content-p">Selon les types d’applications envisagées, on peut utiliser différents types de profils:</p>
+
+      <h4 class="content-h4-minititle padding-top"><mark>Biconvexe symétrique</mark></h4>
+      <h5 class="content-formula-title-h5">Caractéristiques :</h5>
+      <img class="content-img-center content-img-md" src="../content/forme-aile/biconvexeSymetrique.jpg" alt="">
+      <ul class="content-ul-list">
+        <li><p class="content-p">- L’intrados et l’extrados convexes sont symétriques par rapport à la corde.</p></li>
+        <li><p class="content-p">- La ligne moyenne est rectiligne et est confondue avec la corde.</p></li>
+        <li><p class="content-p">- L’aile biconvexe symétrique ne porte pas aux faibles incidences. Elle n’est intéressante que pour les gouvernes et la voltige.</p></li>
+      </ul>
+
+      <h4 class="content-h4-minititle padding-top"><mark>Biconvexe dissymétrique</mark></h4>
+      <h5 class="content-formula-title-h5">Caractéristiques :</h5>
+      <img class="content-img-center content-img-md" src="../content/forme-aile/biconvexeDissymetrique.jpg" alt="">
+      <ul class="content-ul-list">
+        <li><p class="content-p">- La courbure de l’extrados est plus accentuée que celle de l’intrados.</p></li>
+        <li><p class="content-p">- La ligne moyenne est à simple courbure (l’intrados et l’extrados sont convexes).</p></li>
+        <li><p class="content-p">- Le profil biconvexe dissymétrique a également une bonne portance même à incidence nulle.</p></li>
+        <li><p class="content-p">- Ce profil est couramment utilisé dans l’aviation de loisir.</p></li>
+      </ul>
+
+      <h4 class="content-h4-minititle padding-top"><mark>Plan convexe</mark></h4>
+      <h5 class="content-formula-title-h5">Caractéristiques :</h5>
+      <img class="content-img-center content-img-md" src="../content/forme-aile/planConvexe.jpg" alt="">
+      <ul class="content-ul-list">
+        <li><p class="content-p">- Il s’agit d’un profil ayant un intrados relativement plat et un extrados cambré (convexe).</p></li>
+        <li><p class="content-p">- Le profil plan convexe porte bien même à faible incidence mais il est légèrement instable.</p></li>
+        <li><p class="content-p">- C’est le profil d’aile le plus utilisé dans l’aéronautique moderne.</p></li>
+      </ul>
+
+      <h4 class="content-h4-minititle padding-top"><mark>Plan creux</mark></h4>
+      <h5 class="content-formula-title-h5">Caractéristiques :</h5>
+      <img class="content-img-center content-img-md" src="../content/forme-aile/planCreux.jpg" alt="">
+      <ul class="content-ul-list">
+        <li><p class="content-p">- L’extrados est convexe et l’intrados concave.</p></li>
+        <li><p class="content-p">- Ces profils sont très porteurs mais génèrent une trainée importante.</p></li>
+        <li><p class="content-p">-  Le profil cambré (ou creux) est très porteur mais il est assez instable, lorsque l’incidence augmente, le profil à tendance à se cabrer.</p></li>
+      </ul>
+
+      <h4 class="content-h4-minititle padding-top"><mark>Profil Jedelsky</mark></h4>
+      <h5 class="content-formula-title-h5">Caractéristiques :</h5>
+      <img class="content-img-center content-img-md" src="../content/forme-aile/profilJedelsky.jpg" alt="">
+      <ul class="content-ul-list">
+        <li><p class="content-p">- Jedelsky a inventé un profil creux qui porte aujourd’hui son nom et qui consiste à transformer les deux tiers du profil en une simple planche.</p></li>
+        <li><p class="content-p">- La fabrication de ce profil est donc rendue beaucoup plus facile.</p></li>
+      </ul>
+
+      <h4 class="content-h4-minititle padding-top"><mark>Double courbure</mark></h4>
+      <h5 class="content-formula-title-h5">Caractéristiques :</h5>
+      <img class="content-img-center content-img-md" src="../content/forme-aile/doubleCourbe.jpg" alt="">
+      <ul class="content-ul-list">
+        <li><p class="content-p">- Le profil à double courbure (ou auto stable) présente l’avantage d’une grande stabilité mais il a une portance moyenne et une traînée assez forte.</p></li>
+        <li><p class="content-p">- Ce profil a la particularité d’avoir une ligne moyenne à double courbure, ce qui lui permet d’adapter son angle d’incidence aux conditions de vol.</p></li>
+      </ul>
+
+
+    </div><!-- end of the container -->
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/biblio.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    </body>
+    </html>

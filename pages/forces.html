@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VIEWPORT POUR IPHONE -->
+
+    <!-- EXTERNAL LINKS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans:300,400" rel="stylesheet"><!-- GOOGLE FONT BUBBLER ONE + OPEN SANS // 300 + 700 + Quicksand-->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132821264-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132821264-1');
+    </script>
+
+    <!-- INTERNAL LINKS -->
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/navHome.css">
+    <link rel="stylesheet" href="../css/specific.css">
+
+    <title>Les Forces | LaPortance.co.uk</title>
+    <link rel="icon" href="../library/ico.png">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">LaPortance.co.uk</a>
+
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link green" href="profileAile.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active-b" href="#">Théorie</a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link yellow" href="laerodynamisme.html">L'aérodynamisme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active-b" href="#">Les Forces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="air-fluide.html">L'air, un fluide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="importance-aile.html">L'aile</a>
+            </li>
+        </ul>
+      </div>
+
+      <span style="cursor:pointer" class="d-flex d-lg-none" onclick="toggleNav()"><img src="../library/menu.svg" alt=""></span>
+    </nav>
+
+    <div id="myNav" class="overlay d-flex d-lg-none" onclick="closeNav()">
+      <div class="overlay-content">
+        <a href="laerodynamisme.html" onclick="closeNav()">L'aerodynamisme</a>
+        <a href="#" onclick="closeNav()">Les Forces</a>
+        <a href="air-fluide.html" onclick="closeNav()">L'air, un fluide</a>
+        <a href="importance-aile.html" onclick="closeNav()">L'aile</a>
+      </div>
+    </div>
+
+
+    <!-- JUMBOTRON PAGES -->
+    <div class="jumbotron jumbotron-fluid jumbotron-pages">
+      <div class="container">
+        <h1 class="display-3 jumbotron-Title">Quelles sont les forces en présence?</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- FORCES + IMG forces -->
+      <p class="content-p">Un solide en mouvement dans l’air subit plusieurs forces aérodynamiques :</p>
+      <img src="../content/pages/forces.jpg" class="content-img-center content-img-md" alt="">
+
+      <!-- Etude du poids et de la poussée -->
+      <h3 class="content-h3-subtitle">Étude du poids et de la poussée</h3>
+
+      <!-- DEFINITION DU POIDS -->
+      <p class="content-p">- <span class="content-p-definition">LE POIDS</span> est la force de pesanteur. Il s’agit de l'attraction gravitationnelle exercée par la Terre. Elle s’applique sur le centre de gravité du corps, verticalement et de haut en bas.</p>
+
+      <!-- FORMULE DU POIDS -->
+      <h4 class="content-formula-title">Expression du poids noté <em>p</em> :</h4>
+      <ul class="content-ul-formula">
+        <li><img src="../content/formulas/poids.png" class="content-formula-img content-formula-img-sm" alt=""></li>
+        <li><p class="content-p"><span class="content-formula-letter">p </span> le poids (en Newton)</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">m </span> la masse du corps en question (en Kg)</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">g</span> la force gravitationnelle de la Terre (N/Kg)</p></li>
+      </ul>
+
+      <!-- DEFINITION DE LA POUSSEE -->
+      <p class="content-p padding-top">- <span class="content-p-definition">LA POUSSÉE </span>est la force exercée par le déplacement d’un objet. Elle s’applique au centre de gravité de l’objet, a une direction parallèle à la trajectoire de l’avion et son sens est vers l’avant.</p>
+
+
+      <!-- EÉtude de la portance et de la traînée -->
+      <h3 class="content-h3-subtitle">Étude de la portance et de la traînée</h3>
+
+      <p class="content-p">Un corps placé dans un écoulement d'air subit une force aérodynamique. Pour l'analyser, on décompose cette force en une composante parallèle au vent relatif : la traînée, et une composante perpendiculaire au vent relatif : la portance. Pour une aile d'avion, la portance est dirigée de l'intrados vers l'extrados ( <a href="#">voir les différentes parties de l'aile</a> ). En aérodynamisme, la portance s'exerce perpendiculairement à la ligne de trajectoire de l’avion; elle n'est donc verticale que lorsque le corps est en mouvement à l’horizontale (en vol de croisière pour un avion).</p>
+
+      <!-- DEFINITION DE LA PORTANCE -->
+      <p class="content-p padding-top">- <span class="content-p-definition">LA PORTANCE </span>est une poussée verticale résultant des forces de pressions qui s’exercent sur un corps en mouvement dans un fluide (l’air dans le cas d’un avion). La portance s’exerce dans le sens opposé que le poids et compense ainsi l’action du poids pour permettre le vol ( <a href="air-fluide.html#bernoulli">voir théorème de Bernoulli</a> ).</p>
+
+      <!-- COEFFICIENT DE PORTANCE -->
+      <h4 class="content-formula-title">Le coefficient de portance dépend de plusieurs facteurs :</h4>
+      <ul class="content-ul-list">
+        <li><p class="content-p">- <span class="content-list-definition">La forme de l’aile,</span> car la différence de pression entre la face supérieure (extrados) et inférieure (intrados) dépend de cette forme.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La surface de l’aile,</span> car plus les ailes sont grandes, plus la portance est importante.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La densité de l’air,</span> car ce sont les particules d’air qui, en exerçant une pression sur les ailes, permettent la portance.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La vitesse du vent relatif,</span> la portance est en effet proportionnelle au carré du vent relatif.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">L’angle d’incidence </span> aussi appelé angle d’attaque noté α. L’augmentation de l’angle d’incidence augmentera le coefficient de portance jusqu'à un certain seuil appelé Czmax.list-definition</p></li>
+      </ul>
+
+      <!--  Expression de la portance -->
+      <h4 class="content-formula-title">Expression de la portance (Coefficient de portance noté Cz):</h4>
+      <ul class="content-ul-formula">
+        <li><img src="../content/formulas/portance.png" class="content-formula-img content-formula-img-md" alt=""></li>
+        <li><p class="content-p"><span class="content-formula-letter">Fz </span> (le poids en Newton)</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">p </span> la masse volumique de l’air</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">s </span> la surface de voilure en m<sup>2</sup> → l'aire des ailes projetée sur le plan horizontal (visible dans la vue de dessus), empennage non compris.</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">v </span>  la vitesse de déplacement en m/s</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">Cz </span>  le coefficient de la portance (sans unité)</p></li>
+      </ul>
+
+      <!-- DEMONSTRATION PORTANCE -->
+      <h4 class="content-formula-title">Exemple :</h4>
+      <ul class="content-ul-example">
+        <li><p class="content-p">Calculons le coefficient de portance d’un avion aux propriétés suivantes :</p></li>
+        <li><p class="content-p">m= 235000 kg ⇔ p=m/g ⇔ p=24000N</p></li>
+        <li><p class="content-p">S= 20m2 / p=1,2 kg.m<sup>-3</sup></p></li>
+        <li><p class="content-p">L’avion est placé dans les conditions suivantes :</p></li>
+        <li><p class="content-p">v=360km/h // h=3600s ie 100 m.s<sup>-1</sup></p></li>
+        <li><p class="content-p">On applique les données numériques à la formule connue :</p></li>
+        <li><img src="../content/formulas/coeffPortance.png" class="content-formula-img-lg" alt=""></li>
+        <li><p class="content-p">Le coefficient de portance est utilisé pour quantifier la portance d'un profil (en 2 dimensions) ou d'un corps profilé (en 3 dimensions).</p></li>
+      </ul>
+
+      <!-- DECROCHAGE DE L'AILE -->
+      <h4 class="content-formula-title">Influence de l’angle d’incidence sur la portance :</h4>
+      <p class="content-p">Ci-dessous la courbe du coefficient de portance Cz en fonction de l'incidence α :</p>
+      <img src="../content/pages/graph1.png" class="content-img-center content-img-lg" alt="A generic square placeholder image with rounded corners in a figure.">
+      <p class="content-p-comment text-center">On constate sur le graphique ci-dessus que le coefficient de portance Cz augmente avec l'incidence α jusqu’à atteindre sa valeur maximum Czmax qui correspond à un angle d’incidence de 15°. Au-delà de cette incidence dites “critique” l'aile décroche.</p>
+
+      <h4 class="content-h4-minititle padding-top"><mark>Décrochage de l’aile :</mark></h4>
+      <p class="content-p">Tout d’abord, le flux d’air circulant sur l’extrados d’un profil d’aile adhère à la surface du profil (quand l’incidence est faible) car la viscosité et la pression s'oppose à l'éloignement du filet d’air ( <a href="air-fluide.html#viscosite">voir viscosité</a> ). Cependant, quand l'incidence est trop forte l'inertie des particules d’air (due à leur vitesse) prend le dessus, la viscosité et la pression ne peuvent plus permettre l’adhérence du filet d’air, qui se décolle de la partie la plus extérieur de l’aile. Mais si l’on augmente encore l'incidence, le point de décollement remonte brutalement vers l'avant du profil, annulant presque toute la portance : c'est le décrochage. En effet, un tel décollement entraîne la disparition de la force de sustentation et il se forme alors un sillage composé de tourbillons. On peut aussi expliquer le décrochage de l’aile par l’absence soudaine de circulation autour du profil ( <a href="#">voir Kutta Joukowsky</a> ).</p>
+
+      <!-- DEFINITION DE LA TRAINEE -->
+      <p class="content-p padding-top">- <span class="content-p-definition">LA TRAÎNÉE </span>peut être définie comme la résistance à l’avancement. Elle s'accroît avec la vitesse et s’applique dans le même sens et la même direction que le vent relatif.</p>
+
+      <!--  Expression de la TRAINEE -->
+      <h4 class="content-formula-title">Expression de la traîné :</h4>
+      <ul class="content-ul-formula">
+        <li><img src="../content/formulas/trainee.png" class="content-formula-img content-formula-img-md" alt=""></li>
+        <li><p class="content-p"><span class="content-formula-letter">Fx </span> la trainée</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">ρ(rho) </span> la masse volumique du fluide</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">V </span> la vitesse loin de l'obstacle</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">S </span>  la surface</p></li>
+        <li><p class="content-p"><span class="content-formula-letter">Cx </span>  le coefficient de traînée.</p></li>
+      </ul>
+
+      <!-- TYPES DE TRAINEE -->
+      <h4 class="content-formula-title">Il existe trois types de traînée qui, additionnées, donnent la traînée totale :</h4>
+      <ul class="content-ul-list">
+        <li><p class="content-p">- <span class="content-list-definition">La traînée de forme ,</span> qui dépend de la surface de l’avion. En effet elle représente l’essentiel de la traînée d’un obstacle mince. Suivant l’épaisseur d’une aile, la traînée de forme est plus ou moins importante.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La traînée de frottement/sillage,</span> qui est due à la résistance de l’air. Chaque corps en mouvement dans l'air est soumis à une résistance qui tend à s'opposer à ce mouvement. Cette résistance a son origine dans les propriétés de l'air, mais dépend aussi des caractéristiques du corps concerné.</p></li>
+        <li><p class="content-p">- <span class="content-list-definition">La traînée induite,</span> noté Ri, est une force de résistance à l'avancement induite par la portance et qui dépend de certaines caractéristiques de l'aile (allongement, forme, flèche etc...). La traînée induite est un produit de la sustentation, elle s'accroît lorsque l’angle d’attaque augmente. Cet effet est notamment marqué aux extrémités des ailes, l'air circulant en dessous de l’aile se répand sur la partie supérieure où la pression est moins importante. Ce mouvement de remous crée des tourbillons marginaux absorbant une part de l'énergie de l’avion, on parle de tourbillons aux bords de fuite.</p></li>
+      </ul>
+
+      <!-- LA RESULTANTE AERODYNAMIQUE -->
+      <h4 class="content-formula-title padding-top">La résultante aérodynamique :</h4>
+      <p class="content-p">On considère la portance et la traînée comme les composantes d’une seule et même force résultant de l’ensemble des actions aérodynamiques exercées sur ce solide.</p>
+      <img src="../content/pages/resultanteAero.jpg" class="content-img-center content-img-lg" alt="">
+      <p class="content-p-comment text-center">Sur ce graphique, les lignes noires représentent le flux d'air. L'aile est présentée en coupe, l'angle α est l'angle d'incidence.</p>
+
+
+    </div><!-- end of the container -->
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/biblio.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VIEWPORT POUR IPHONE -->
+
+    <!-- EXTERNAL LINKS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans:300,400|Quicksand" rel="stylesheet"><!-- GOOGLE FONT BUBBLER ONE + OPEN SANS // 300 + 700 + Quicksand-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132821264-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132821264-1');
+    </script>
+
+    <!-- INTERNAL LINKS -->
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/navHome.css">
+
+    <title>L'Aérodynamisme | LaPortance.co.uk</title>
+    <link rel="icon" href="../library/ico.png">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">LaPortance.co.uk</a>
+
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link blue" href="laerodynamisme.html">Théorie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active-o" href="#">More</a>
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link yellow" href="interview.html">interview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active-o" href="biblio.html">Bibliographie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link yellow" href="contact.html">A propos des auteurs</a>
+            </li>
+            <li class="nav-item">
+            </li>
+        </ul>
+      </div>
+
+      <span style="cursor:pointer" class="d-flex d-lg-none" onclick="toggleNav()"><img src="../library/menu.svg" alt=""></span>
+    </nav>
+
+    <div id="myNav" class="overlay d-flex d-lg-none" onclick="closeNav()">
+      <div class="overlay-content">
+        <a href="interview.html" onclick="closeNav()">Interview</a>
+        <a href="#" onclick="closeNav()">Bibliographie</a>
+        <a href="contact.html" onclick="closeNav()">A propos des auteurs</a>
+      </div>
+    </div>
+
+    <!-- JUMBOTRON PAGES -->
+    <div class="jumbotron jumbotron-fluid jumbotron-pages">
+      <div class="container">
+        <h1 class="display-3 jumbotron-Title">Bibliographie</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <!-- START CONTAINER -->
+    <div class="container">
+
+      <h4 class="content-h4-minititle"><mark>Ressources Internet:</mark></h4>
+      <ul class="biblio-ul">
+        <li><a class="biblio-a" target="_blank" href="http://www.lavionnaire.fr/">Lavionnaire.fr</a></li>
+        <li><a class="biblio-a" target="_blank" href="http://www.airliners.net/">Airliners</a></li>
+        <li><a class="biblio-a" target="_blank" href="http://galileo.phys.virginia.edu/classes/311/notes/aero/node4.html">Galileo</a></li>
+        <li><a class="biblio-a" target="_blank" href="http://inter.action.free.fr/labo-aero/aero-portance/aerodynamique-portance.html">InterAction</a></li>
+        <li><a class="biblio-a" target="_blank" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Fluids/kutta.html">HyperPhysics</a></li>
+        <li><a class="biblio-a" target="_blank" href="http://ffa-jeunes.ens-cachan.fr/BIA-P%C3%A9dago_files/C.pdf">ffaJeunes Premiere partie</a></li>
+        <li><a class="biblio-a" target="_blank" href="http://ffa-jeunes.ens-cachan.fr/BIA-P%C3%A9dago_files/C.pdf">ffaJeunes Seconde partie</a></li>
+        <li><a class="biblio-a" target="_blank" href="http://tpe-aerodynamique2013.e-monsite.com/">tpe-aerodynamique2013</a></li>
+      </ul>
+
+      <h4 class="content-h4-minititle padding-top"><mark>Ouvrages:</mark></h4>
+      <ul class="biblio-ul">
+        <li><a class="biblio-a" href="http://aerodynamique.chez.com/">"L’encyclopédie du petit aérodynamicien en herbe", éditeur : Raphael Gougnot, consultable gratuitement.</a></li>
+        <li><a class="biblio-a" target="_blank" href="https://www.amazon.fr/Comprendre-pour-mieux-pratiquer-lulm/dp/2854289269/ref=sr_1_1?ie=UTF8&qid=1499163463&sr=8-1&keywords=Comprendre+pour+mieux+pratiquer+l%E2%80%99ulm+%282e+%C3%A9dition%29">"Comprendre pour mieux pratiquer l’ulm (2e édition)" de Didier HORN, édition : Cépaduès éditions, année 2010.</a></li>
+        <li><a class="biblio-a" target="_blank" href="#">"manuel du C.A.E.A (5e édition)" de Charles PIGAILLEM, édition : Volez ! L’aéropratique éditions.</a></li>
+        <li><a class="biblio-a" target="_blank" href="Lavionnaire.fr">"manuel du BIA (Brevet d’Initiation Aéronautique)", de l'Aéroclub Morane SAULNIER</a></li>
+      </ul>
+
+    </div><!-- end of the container -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="../js/biblio.js"></script>
+      <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>
